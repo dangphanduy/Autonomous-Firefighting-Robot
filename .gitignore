@@ -1,0 +1,63 @@
+# ===========================
+# 1. PHẦN DÀNH CHO ROS 2
+# ===========================
+build/
+install/
+log/
+# Các thư mục này được tạo ra khi chạy lệnh 'colcon build',
+# chúng rất nặng và không nên đưa lên git.
+
+# ===========================
+# 2. PHẦN DÀNH CHO PYTHON (Xử lý ảnh/ROS Node)
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+
+# Môi trường ảo (Virtual Env)
+venv/
+.venv/
+
+# ===========================
+# 3. PHẦN DÀNH CHO ESP32 (PlatformIO / Arduino)
+# ===========================
+# Nếu dùng PlatformIO (Khuyên dùng cho ESP32 + ROS)
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Nếu dùng Arduino IDE
+*.ino.cpp
+*.ino.hex
+*.ino.elf
+*.ino.bin
+
+# ===========================
+# 4. CẤU HÌNH IDE & HỆ ĐIỀU HÀNH
+# ===========================
+# VS Code (thường chứa setting cá nhân, không nên public)
+.vscode/
+
+# Hệ thống
+.DS_Store
+Thumbs.db
